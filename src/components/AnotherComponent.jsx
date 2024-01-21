@@ -1,8 +1,16 @@
-import React from 'react'
+
+import { useTodoStore } from './useTodoListStore'
 
 const AnotherComponent = () => {
+  const {todos} = useTodoStore();
+
   return (
-    <div>AnotherComponent</div>
+    <div>
+      <h2>Another Component</h2>
+      {todos.map((todo) => (
+        <p key={todo.id}>{todo.text}</p>
+      ))}
+    </div>
   )
 }
 

@@ -8,8 +8,8 @@ const App = () => {
 
   return (
     <div>
-      <h1>Todo list App with Zustand</h1>
-      <TodoList/>
+      <h1 className="items-center">Todo list App with Zustand</h1>
+      <TodoList />
       <AnotherComponent />
     </div>
   );
